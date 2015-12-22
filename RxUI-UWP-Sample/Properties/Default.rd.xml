@@ -1,0 +1,72 @@
+<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
+  <Application>
+    <Assembly Name="*Application*" Dynamic="Required All" />
+    
+    <Type Name="ReactiveUI.BindingMixins">
+      <Method Name="Bind{TViewModel, TView, TVMProp, TVProp}">
+        <GenericParameter Name="TViewModel" Dynamic="Required All"/>
+        <GenericParameter Name="TView" Dynamic="Required All"/>
+        <GenericParameter Name="TVMProp" Dynamic="Required All"/>
+        <GenericParameter Name="TVProp" Dynamic="Required All"/>
+      </Method>
+
+      <Method Name="OneWayBind{TViewModel, TView, TVMProp, TVProp}">
+        <GenericParameter Name="TViewModel" Dynamic="Required All"/>
+        <GenericParameter Name="TView" Dynamic="Required All"/>
+        <GenericParameter Name="TVMProp" Dynamic="Required All"/>
+        <GenericParameter Name="TVProp" Dynamic="Required All"/>
+      </Method>
+
+      <Method Name="OneWayBind{TViewModel, TView, TProp, TOut}">
+        <GenericParameter Name="TViewModel" Dynamic="Required All"/>
+        <GenericParameter Name="TView" Dynamic="Required All"/>
+        <GenericParameter Name="TProp" Dynamic="Required All"/>
+        <GenericParameter Name="TOut" Dynamic="Required All"/>
+      </Method>
+
+      <Method Name="BindTo{TValue, TTarget, TTValue}">
+        <GenericParameter Name="TValue" Dynamic="Required All"/>
+        <GenericParameter Name="TTarget" Dynamic="Required All"/>
+        <GenericParameter Name="TTValue" Dynamic="Required All"/>
+        <Parameter Name="target" Dynamic="Required All" />
+        <Parameter Name="This" Dynamic="Required All" />
+        <Parameter Name="property" Dynamic="Required All" />
+      </Method>
+    </Type>
+
+    <Type Name="ReactiveUI.PropertyBinderImplementation">
+      <Method Name="Bind{TViewModel, TView, TVMProp, TVProp, TDontCare}">
+        <GenericParameter Name="TViewModel" Dynamic="Required All"/>
+        <GenericParameter Name="TView" Dynamic="Required All"/>
+        <GenericParameter Name="TVMProp" Dynamic="Required All"/>
+        <GenericParameter Name="TVProp" Dynamic="Required All"/>
+        <GenericParameter Name="TDontCare" Dynamic="Required All"/>
+        <Parameter Name="property" Dynamic="Required All" />
+      </Method>
+      
+      <Method Name="BindTo{TValue, TTarget, TTValue}">
+        <GenericParameter Name="TTarget" Dynamic="Required All" />
+        <GenericParameter Name="TValue" Dynamic="Required All" />
+        <GenericParameter Name="TTValue" Dynamic="Required All" />
+        <Parameter Name="target" Dynamic="Required All" />
+        <Parameter Name="This" Dynamic="Required All" />
+        <Parameter Name="property" Dynamic="Required All" />
+      </Method>
+      
+      <Method Name="OneWayBind{TViewModel, TView, TVMProp, TVProp}">
+        <GenericParameter Name="TViewModel" Dynamic="Required All"/>
+        <GenericParameter Name="TView" Dynamic="Required All"/>
+        <GenericParameter Name="TVMProp" Dynamic="Required All"/>
+        <GenericParameter Name="TVProp" Dynamic="Required All"/>
+      </Method>
+      
+      <Method Name="OneWayBind{TViewModel, TView, TProp, TOut}">
+        <GenericParameter Name="TViewModel" Dynamic="Required All"/>
+        <GenericParameter Name="TView" Dynamic="Required All"/>
+        <GenericParameter Name="TProp" Dynamic="Required All"/>
+        <GenericParameter Name="TOut" Dynamic="Required All"/>
+      </Method>
+    </Type>
+
+  </Application>
+</Directives>

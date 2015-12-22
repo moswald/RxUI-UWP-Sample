@@ -1,0 +1,7 @@
+﻿<local:BootstrapApplication x:Class="RxUI_UWP_Sample.App"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:local="using:RxUI_UWP_Sample"
+                      RequestedTheme="Light">
+
+</local:BootstrapApplication>
